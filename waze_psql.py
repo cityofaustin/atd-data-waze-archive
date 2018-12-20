@@ -9,6 +9,7 @@ import requests
 import json
 
 from tdutils.pgrestutil import Postgrest
+from pypgrest import Postgrest
 
 from config.secrets import *
 
@@ -77,8 +78,6 @@ def post_to_postgre(alerts_list):
 
     for index, alert in enumerate(alerts_list):
         alerts_list[index] = dict((k.lower(), v) for k, v in alert.items())
-
-    print(alerts_list)
 
     for alert in alerts_list:
 
