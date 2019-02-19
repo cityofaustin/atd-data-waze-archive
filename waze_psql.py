@@ -17,8 +17,8 @@ waze_endpoint = waze_endpoint
 
 
 pgrest = Postgrest(
-    "http://transportation-data-test.austintexas.io/waze_archive",
-    auth=JOB_DB_API_TOKEN_test,
+    POSTGRE_ENDPOINT,
+    auth=JOB_DB_API_TOKEN
 )
 
 
